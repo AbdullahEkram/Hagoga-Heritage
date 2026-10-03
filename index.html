@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حجوجة | أكل مصري على أصوله</title>
+<meta name="description" content="حجوجة - مطعم مأكولات مصرية يقدم الملوخية والطواجن والمشاوي والكوارع والأرز المعمر وغيرها من الأكلات المصرية الأصيلة.">
+<style>
+:root{
+  --brown:#4a2418; --gold:#d99a3d; --cream:#fff8ed; --dark:#17110e;
+  --muted:#806f64; --white:#fff; --green:#1f7a52;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--cream);color:var(--dark);line-height:1.8}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(74,36,24,.97);color:#fff;box-shadow:0 4px 20px #0002}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:23px}
+.brand img{width:50px;height:50px;object-fit:cover;border-radius:50%;border:2px solid var(--gold)}
+nav a{margin:0 9px;font-size:14px;color:#fff}
+.btn{display:inline-block;background:var(--gold);color:#2b170e;padding:12px 22px;border-radius:30px;font-weight:800}
+.btn.outline{background:transparent;color:#fff;border:1px solid #ffffff66}
+.hero{background:radial-gradient(circle at 15% 20%,#7d4630 0,#4a2418 42%,#24130d 100%);color:#fff;padding:78px 0 72px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:45px}
+.badge{display:inline-block;background:#ffffff14;border:1px solid #ffffff25;padding:7px 14px;border-radius:30px;color:#ffd68b;font-size:13px}
+h1{font-size:clamp(38px,6vw,70px);line-height:1.08;margin:18px 0}
+.hero p{font-size:18px;color:#f4dfd2;max-width:650px}
+.hero-card{background:#fff1;border:1px solid #ffffff20;border-radius:28px;padding:18px;transform:rotate(-2deg)}
+.hero-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px;display:block}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}
+.stat{background:#fff1;border:1px solid #ffffff20;border-radius:16px;padding:12px;text-align:center}
+.stat b{display:block;font-size:23px;color:#ffd68b}.stat span{font-size:12px;color:#ead8ce}
+section{padding:78px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+.section-head h2{font-size:38px;margin:0 0 8px;color:var(--brown)}
+.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid #eadfd4;border-radius:20px;padding:22px;box-shadow:0 10px 30px #4a24180b}
+.card .icon{font-size:35px}.card h3{margin:10px 0 5px;color:var(--brown)}.card p{color:var(--muted);font-size:14px;margin:0}
+.feature{background:#f1e3d2}.feature-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}
+.feature-img{background:#fff;padding:12px;border-radius:25px;box-shadow:0 18px 50px #4a241820}
+.feature-img img{width:100%;border-radius:18px;display:block}
+.list{padding:0;list-style:none}.list li{margin:12px 0;padding-right:28px;position:relative}.list li:before{content:"✓";position:absolute;right:0;color:var(--green);font-weight:900}
+.review{background:var(--brown);color:#fff}.review .section-head h2{color:#fff}.review .section-head p{color:#e9d7cb}
+.quote{background:#fff;color:var(--dark);padding:30px;border-radius:22px;max-width:850px;margin:auto;text-align:center}
+.stars{color:#e0a13d;font-size:24px;letter-spacing:3px}.quote p{font-size:19px}
+.contact{background:#fff}.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:25px;background:#fff8ed;border:1px solid #eadfd4;padding:30px;border-radius:25px}
+.info{display:grid;gap:12px}.info div{background:#fff;padding:15px 18px;border-radius:14px;border:1px solid #eee}
+footer{background:#21130e;color:#d8c6bb;padding:30px 0;text-align:center;font-size:13px}
+.cta{margin-top:25px;display:flex;gap:12px;flex-wrap:wrap}
+@media(max-width:850px){nav{display:none}.hero-grid,.feature-grid,.contact-box{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr}section{padding:55px 0}.nav{height:68px}.brand{font-size:19px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#"><img src="logo.jfif" alt="لوجو حجوجة">حجوجة</a>
+    <nav>
+      <a href="#about">عن حجوجة</a><a href="#menu">الأكل</a><a href="#reviews">آراء العملاء</a><a href="#contact">تواصل معنا</a>
+    </nav>
+    <a class="btn" href="tel:01280055200">اتصل الآن</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">أكل مصري أصيل • طعم البيت</span>
+      <h1>حجوجة…<br>الأكل المصري لما يتعمل صح</h1>
+      <p>من الملوخية والطواجن إلى المشاوي والأرز المعمر والكوارع… أكلات مصرية كلاسيكية بطعم يخليك ترجع تاني.</p>
+      <div class="cta">
+        <a class="btn" href="#menu">اكتشف أكلنا</a>
+        <a class="btn outline" href="tel:01280055200">012 80055200</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>4.4 ★</b><span>تقييم العملاء</span></div>
+        <div class="stat"><b>35,980+</b><span>مراجعة</span></div>
+        <div class="stat"><b>مصري 100%</b><span>الطابع والمذاق</span></div>
+      </div>
+    </div>
+    <div class="hero-card"><img src="logo.jfif" alt="حجوجة"></div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="container">
+    <div class="section-head"><h2>أشهر أطباق حجوجة</h2><p>اختيارات عليها إقبال كبير من زوار المطعم.</p></div>
+    <div class="cards">
+      <div class="card"><div class="icon">🍃</div><h3>ملوخية</h3><p>من أشهر الاختيارات وأكثر الأطباق ذكراً في تقييمات العملاء.</p></div>
+      <div class="card"><div class="icon">🥘</div><h3>طواجن</h3><p>طواجن مصرية غنية بالنكهة ومناسبة للوجبة العائلية.</p></div>
+      <div class="card"><div class="icon">🍖</div><h3>كوارع</h3><p>اختيار مصري أصيل لعشاق الأكلات الشعبية التقليدية.</p></div>
+      <div class="card"><div class="icon">🍚</div><h3>أرز معمر</h3><p>طبق كلاسيكي يكمل السفرة المصرية ويليق بالطواجن والمشاوي.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="feature">
+  <div class="container feature-grid">
+    <div class="feature-img"><img src="logo.jfif" alt="حجوجة"></div>
+    <div>
+      <span class="badge" style="background:#4a2418;color:#ffd68b">ليه حجوجة؟</span>
+      <h2 style="font-size:40px;color:#4a2418">تجربة مصرية كاملة، مش مجرد وجبة</h2>
+      <ul class="list">
+        <li>تنوع من الأكلات المصرية الشعبية والكلاسيكية.</li>
+        <li>أجواء مناسبة للأكل داخل المكان والزيارات العائلية.</li>
+        <li>متاح الطعام السفري وخدمة التوصيل.</li>
+        <li>موقع واضح وسهل الوصول إليه على طريق السويس.</li>
+      </ul>
+      <a class="btn" href="#contact">اعرف أكتر</a>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="review">
+  <div class="container">
+    <div class="section-head"><h2>الناس بتقول إيه؟</h2><p>تقييمات حقيقية كما تظهر في صفحة المطعم.</p></div>
+    <div class="quote">
+      <div class="stars">★★★★★</div>
+      <p>«اكل اكتر من تحفة… ولا طبق كان متوسط، كل الأطباق روعة و طعم خيال.»</p>
+      <strong>— من تقييمات عملاء حجوجة</strong>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-head"><h2>زورنا أو اطلب الآن</h2><p>كل المعلومات الأساسية في مكان واحد بدل ما العميل يدور عليها.</p></div>
+    <div class="contact-box">
+      <div class="info">
+        <div><strong>📍 العنوان</strong><br>Rocket Garden، شارع الصاعقة، طريق السويس، القاهرة</div>
+        <div><strong>📞 الهاتف</strong><br><a href="tel:01280055200">012 80055200</a></div>
+        <div><strong>🕐 المواعيد</strong><br>يفتح الساعة 1 م حسب المعلومات المعروضة</div>
+      </div>
+      <div>
+        <h3 style="color:#4a2418">جاهز لتجربة حجوجة؟</h3>
+        <p style="color:#806f64">اختصر الطريق على العميل: شاف الأكل، عرف المكان، اتصل أو اطلب—كل ده من صفحة واحدة.</p>
+        <a class="btn" href="tel:01280055200">اتصل بالمطعم</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© حجوجة — موقع تعريفي تجريبي. جميع المعلومات مبنية على البيانات المقدمة في الطلب.</footer>
+</body>
+</html>
